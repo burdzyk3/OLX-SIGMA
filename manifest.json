@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "wtyczkaOLX",
+	"description": "Wtyczka do OLX, ukrywa powtarzające się/zle dobrane wyrozniajace sie ogloszenia. Lepszy filtr.",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Example"
+	},
+
+	"icons": {
+		"128": "128.png"
+	},
+
+	"content_scripts": [
+		{
+			"js": ["wtyczkaOLX.js"],
+			"matches": ["https://www.olx.pl/*"]
+		}
+	]
+}
